@@ -1,0 +1,12 @@
+# Browser + CDN caching so images and static files load instantly on repeat visits / page changes
+/assets/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/*.otf
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/css/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/js/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
